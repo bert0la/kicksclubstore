@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Vans</title>
+{% endblock %}
+
+{% block body %}
+    <li><a href="{{ url_for('index') }}">Main Page</a></li>
+
+    <h1>Vans Chukka Low</h1>
+
+    <form action="/addcart/{{ shoe }}/{{ price }}", method="POST">
+        <li>Size <select name="size" id="size"></li>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+        </select>
+        <li>Quantity <input type="number", name="quantity" value="0", min="0"></li>
+        <input type="submit", value="Add">
+    </form>
+
+{% endblock %}
