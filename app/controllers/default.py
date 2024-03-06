@@ -95,6 +95,72 @@ def vanschukkalow():
     price = f"500,00"
     return render_template("shoes/vanschukkalow.html", shoe=shoe, price=price)
 
+# yeezy
+
+@app.route("/yzblackblue")
+def yzblackblue():
+    return render_template("YzBlackBlue.html")
+
+@app.route("/yzoreo")
+def yzoreo():
+    return render_template("YzOreo.html")
+
+@app.route("/yzyecheil")
+def yzyecheil():
+    return render_template("YzYecheil.html")
+
+@app.route("/yzbred")
+def yzbred():
+    return render_template("YzBred.html")
+
+@app.route("/yzslate")
+def yzslate():
+    return render_template("YzSlate.html")
+
+@app.route("/yzoat")
+def yzoat():
+    return render_template("YzOat.html")
+
+@app.route("/yzbeluga")
+def yzbeluga():
+    return render_template("YzBeluga.html")
+
+@app.route("/yzzebra")
+def yzzebra():
+    return render_template("YzZebra.html")
+
+@app.route("/yzbone")
+def yzbone():
+    return render_template("YzBone.html")
+
+@app.route("/yz700static")
+def yz700static():
+    return render_template("Yz700Static.html")
+
+@app.route("/yz700waverun")
+def yz700waverun():
+    return render_template("Yz700WaveRun.html")
+
+@app.route("/yz700vanta")
+def yz700vanta():
+    return render_template("Yz700Vanta.html")
+
+@app.route("/yz700inertia")
+def yz700inertia():
+    return render_template("Yz700Inertia.html")
+
+@app.route("/yz700v3azael")
+def yz700v3azael():
+    return render_template("Yz700V3azael.html")
+
+@app.route("/yz700v3kyanite")
+def yz700v3kyanite():
+    return render_template("Yz700V3Kyanite.html")
+
+@app.route("/yz700v3eremiel")
+def yz700v3eremiel():
+    return render_template("Yz700V3Eremiel.html")
+
 # nike
 @app.route("/dunkpanda")
 def dunkpanda():
@@ -115,6 +181,66 @@ def airforcewhite():
 @app.route("/dunkuniversityblue")
 def dunkuniversityblue():
     return render_template("dunkUniversityBlue.html")
+
+@app.route("/dunktravis")
+def dunktravis():
+    return render_template("dunkTravis.html")
+
+@app.route("/dunklosangeles")
+def dunklosangeles():
+    return render_template("dunkLosAngeles.html")
+
+@app.route("/dunkpandapigeon")
+def dunkpandapigeon():
+    return render_template("dunkPandaPigeon.html")
+
+@app.route("/dunkstrangelove")
+def dunkstrangelove():
+    return render_template("dunkStrangeLove.html")
+
+@app.route("/dunkhuf")
+def dunkhuf():
+    return render_template("dunkHuf.html")
+
+@app.route("/dunkreversepanda")
+def dunkreversepanda():
+    return render_template("dunkReversePanda.html")
+
+@app.route("/dunkapril")
+def dunkapril():
+    return render_template("dunkApril.html")
+
+@app.route("/dunkborn")
+def dunkborn():
+    return render_template("dunkBorn.html")
+
+@app.route("/dunkgreenapple")
+def dunkgreenapple():
+    return render_template("dunkGreenApple.html")
+
+@app.route("/dunkmetalicgold")
+def dunkmetalicgold():
+    return render_template("dunkMetalicGold.html")
+
+@app.route("/dunkpowerpuff")
+def dunkpowerpuff():
+    return render_template("dunkPowerPuff.html")
+
+@app.route("/dunkvalentine")
+def dunkvalentine():
+    return render_template("dunkValentine.html")
+
+@app.route("/dunkcourtpurple")
+def dunkcourtpurple():
+    return render_template("dunkCourtPurple.html")
+
+@app.route("/airmaxwotherspoon")
+def airmaxwotherspoon():
+    return render_template("aixmaxWotherSpoon.html")
+
+@app.route("/airmax9white")
+def airmax9white():
+    return render_template("airmax9white.html")
 
 
 # jordan
@@ -239,6 +365,72 @@ def nwgreen():
 @app.route("/vansknu")
 def vansknu():
     return render_template("vansknu.html")
+
+# adidas
+
+@app.route("/adcampuswhiteblack")
+def adcampuswhiteblack():
+    return render_template("AdcampusWhiteBlack.html")
+
+@app.route("/adcampusgrey")
+def adcampusgrey():
+    return render_template("adCampusGrey.html")
+
+@app.route("/adcampusgreen")
+def adcampusgreen():
+    return render_template("adCampusGreen.html")
+
+@app.route("/adcampusgreylite")
+def adcampusgreylite():
+    return render_template("adCampusgreyLITE.html")
+
+@app.route("/adcampusblue")
+def adcampusblue():
+    return render_template("adCampusBlue.html")
+
+@app.route("/adcampuswine")
+def adcampuswine():
+    return render_template("adCampusWine.html")
+
+@app.route("/adultraboost4")
+def adultraboost4():
+    return render_template("adUltraBoost4.html")
+
+@app.route("/adultraboost22")
+def adultraboost22():
+    return render_template("adUltraBoost22.html")
+
+@app.route("/adultraboost23")
+def adultraboost23():
+    return render_template("adUltraBoost23.html")
+
+@app.route("/adbedbandoffwhite")
+def adbedbandoffwhite():
+    return render_template("adBedBandoffWhite.html")
+
+@app.route("/adbadbunnyblack")
+def adbadbunnyblack():
+    return render_template("adBadBunnyBlack.html")
+
+@app.route("/adbadbunnyblue")
+def adbadbunnyblue():
+    return render_template("adBadBunnyBlue.html")
+
+@app.route("/adsuperstarblue")
+def adsuperstarblue():
+    return render_template("adSuperStarBlue.html")
+
+@app.route("/adsuperstarwhite")
+def adsuperstarwhite():
+    return render_template("adSuperStarWhite.html")
+
+@app.route("/adsuperstarpink")
+def adsuperstarpink():
+    return render_template("adSuperStarPink.html")
+
+@app.route("/adsuperstarblack")
+def adsuperstarblack():
+    return render_template("adSuperStarBlack.html")
 
 
 # cart

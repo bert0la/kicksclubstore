@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CssGeral/css/styleSHOP.css" />
-    <link rel="stylesheet" href="/CssGeral/css/responsive.css" />
-    <link rel="stylesheet" href="/CssGeral/cssBrend/adidasHeader.css" />
+    <link rel="stylesheet" href="../static/css/styleSHOP.css" />
+    <link rel="stylesheet" href="../static/css/responsive.css" />
+    <link rel="stylesheet" href="../static/css/adidasHeader.css" />
 
-    <link rel="icon" href="/ImgGeral/img/abaLOGO.png" />
+    <link rel="icon" href="../static/img/ImgGeral/img/abaLOGO.png" />
 
     <title>Kick's Club Store</title>
 
@@ -21,17 +21,23 @@
   </head>
   <body>
     <section id="header">
-      <a href="#"><img class="logo" src="/ImgGeral/img/logoMainimports-04.png" /></a>
+      <a href="#"
+        ><img
+          class="logo"
+          src="../static/img/ImgGeral/img/logoMainimports-04.png"
+      /></a>
 
       <div class="menu">
         <ul id="navbar">
-          <li><a href="/index.html">Principal</a></li>
+          <li><a href="{{ url_for('index') }}">Principal</a></li>
           <li><a class="active" href="#sm-banner">Marcas</a></li>
-          <li><a href="/About/about.html">Informações</a></li>
-          <li><a href="/userAccount/Resgister/register.html">Registrar-se</a></li>
-          <li><a href="/userAccount/login/login.html">Login</a></li>
+          <li><a href="{{ url_for('about') }}">Informações</a></li>
           <li>
-            <a href="/cart/cart.html"
+            <a href="{{ url_for('register') }}">Registrar-se</a>
+          </li>
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li>
+            <a href="{{ url_for('cart') }}"
               ><i
                 id="lg-bag"
                 class="fas fa-shopping-bag"
@@ -44,23 +50,24 @@
       </div>
 
       <div id="mobile">
-        <a href="/cart/cart.html"
+        <a href="{{ url_for('cart') }}"
           ><i class="fas fa-shopping-bag" style="color: #000000"></i
         ></a>
         <i id="bar" class="fas fa-outdent"></i>
       </div>
     </section>
 
-    <section id="page-header" class="pageAdidas">
-    </section>
+    <section id="page-header" class="pageAdidas"></section>
 
     <h1 class="title-brand">Coleção ADIDAS</h1>
 
     <section id="product1" class="section-p1">
       <div class="pro-container">
-
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/AdcampusWhiteBlack.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiCampuBlack (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adcampuswhiteblack') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiCampuBlack (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -79,8 +86,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adCampusGrey.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiCampusbalckGrey (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adcampusgrey') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiCampusbalckGrey (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -99,8 +109,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adCampusGreen.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiCampusGreenFD.png" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adcampusgreen') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiCampusGreenFD.png" />
 
           <div class="des">
             <span>Adidas</span>
@@ -119,8 +132,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adCampusgreyLITE.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiCampusgrey (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adcampusgreylite') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiCampusgrey (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -139,8 +155,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adCampusBlue.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiCampusBlueFD.png" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adcampusblue') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiCampusBlueFD.png" />
 
           <div class="des">
             <span>Adidas</span>
@@ -159,8 +178,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adCampusWine.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiCampuspinkFD.png" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adcampuswine') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiCampuspinkFD.png" />
 
           <div class="des">
             <span>Adidas</span>
@@ -179,8 +201,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adUltraBoost4.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiUltraBoostWhite (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adultraboost4') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiUltraBoostWhite (1).jpg" />
 
           <div class="des">
             <span>Ultra Boost</span>
@@ -199,8 +224,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adUltraBoost22.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiUltra Boost22 (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adultraboost22') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiUltra Boost22 (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -219,8 +247,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adUltraBoost23.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiUltraBoost2023 (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adultraboost23') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiUltraBoost2023 (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -239,8 +270,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adBedBandoffWhite.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiBadBunny (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adbedbandoffwhite') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiBadBunny (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -259,8 +293,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adBadBunnyBlack.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/aidBadBuunyBlack (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adbadbunnyblack') }}';"
+        >
+          <img src="../static/img/adidasIMG/aidBadBuunyBlack (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -279,8 +316,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adBadBunnyBlue.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiBadbunnyBlue (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adbadbunnyblue') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiBadbunnyBlue (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -299,9 +339,11 @@
           ></a>
         </div>
 
-        
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adSuperStarBlue.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiSuperBlue (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adsuperstarblue') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiSuperBlue (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -320,9 +362,11 @@
           ></a>
         </div>
 
-        
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adSuperStarWhite.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiSuperwhite.jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adsuperstarwhite') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiSuperwhite.jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -341,9 +385,11 @@
           ></a>
         </div>
 
-        
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adSuperStarPink.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiSuperWhiteandPink (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adsuperstarpink') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiSuperWhiteandPink (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -362,9 +408,11 @@
           ></a>
         </div>
 
-        
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adSuperStarBlack.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiSuperBlack (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adsuperstarblack') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiSuperBlack (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -391,18 +439,41 @@
     </section>
 
     <section id="sm-banner" class="section-p1">
-      <div id="airJordan"  class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopJordan.html';" style="cursor: pointer;">
-      </div>
+      <div
+        id="airJordan"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopjordan') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="adidas" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopAdidas.html';" style="cursor: pointer;"></div>
+      <div
+        id="adidas"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopadidas') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="nike" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopNike.html';" style="cursor: pointer;"></div>
+      <div
+        id="nike"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopnike') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="yeezy" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopYeezy.html';" style="cursor: pointer;"></div>
+      <div
+        id="yeezy"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopyeezy') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="vans" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/ShopOutros.html';" style="cursor: pointer;"></div>
+      <div
+        id="vans"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopoutros') }}';"
+        style="cursor: pointer"
+      ></div>
     </section>
-
 
     <footer>
       <div class="footer-bottom">
@@ -414,9 +485,14 @@
     </footer>
 
     <div class="buttonzap">
-      <a href='https://api.whatsapp.com/send?phone=5543988007768&'class="iconWhats" target='_blank'><i class="fab fa-whatsapp"></i></a>
+      <a
+        href="https://api.whatsapp.com/send?phone=5543988007768&"
+        class="iconWhats"
+        target="_blank"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
     </div>
 
-    <script src="/js/scriptHAMBURGUER.js"></script>
+    <script src="../static/js/scriptHAMBURGUER.js"></script>
   </body>
 </html>

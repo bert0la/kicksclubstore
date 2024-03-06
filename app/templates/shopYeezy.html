@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CssGeral/css/styleSHOP.css" />
-    <link rel="stylesheet" href="/CssGeral/css/responsive.css" />
+    <link rel="stylesheet" href="../static/css/styleSHOP.css" />
+    <link rel="stylesheet" href="../static/css/responsive.css" />
 
-    <link rel="stylesheet" href="/CssGeral/cssBrend/yeezyHeader.css" />
+    <link rel="stylesheet" href="../static/css/yeezyHeader.css" />
 
-    <link rel="icon" href="/ImgGeral/img/abaLOGO.png" />
+    <link rel="icon" href="../static/img/ImgGeral/img/abaLOGO.png" />
 
     <title>Kick's Club Store</title>
 
@@ -22,17 +22,25 @@
   </head>
   <body>
     <section id="header">
-      <a href="/index.html"><img class="logo" src="/ImgGeral/img/logoMainimports-04.png" /></a>
+      <a href="{{ url_for('index') }}"
+        ><img
+          class="logo"
+          src="../static/img/ImgGeral/img/logoMainimports-04.png"
+      /></a>
 
       <div class="menu">
         <ul id="navbar">
-          <li><a href="/index.html">Principal</a></li>
-          <li><a class="active" href="/HtmlGeral/htmlBrend/shopJordan.html">Marcas</a></li>
-          <li><a href="/About/about.html">Informações</a></li>
-          <li><a href="/userAccount/Resgister/register.html">Registrar-se</a></li>
-          <li><a href="/userAccount/login/login.html">Login</a></li>
+          <li><a href="{{ url_for('index') }}">Principal</a></li>
           <li>
-            <a href="/cart/cart.html"
+            <a class="active" href="{{ url_for('shopjordan') }}">Marcas</a>
+          </li>
+          <li><a href="{{ url_for('about') }}">Informações</a></li>
+          <li>
+            <a href="{{ url_for('register') }}">Registrar-se</a>
+          </li>
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li>
+            <a href="{{ url_for('cart') }}"
               ><i
                 id="lg-bag"
                 class="fas fa-shopping-bag"
@@ -45,22 +53,24 @@
       </div>
 
       <div id="mobile">
-        <a href="/cart/cart.html"
+        <a href="{{ url_for('cart') }}"
           ><i class="fas fa-shopping-bag" style="color: #000000"></i
         ></a>
         <i id="bar" class="fas fa-outdent"></i>
       </div>
     </section>
 
-    <section id="page-header" class="pageAdidas">
-    </section>
+    <section id="page-header" class="pageAdidas"></section>
 
     <h1 class="title-brand">Coleção YEEZY BOOST</h1>
 
     <section id="product1" class="section-p1">
       <div class="pro-container">
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/YzBlackBlue.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/YzBlackBlue (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yzblackblue') }}';"
+        >
+          <img src="../static/img/yeezyIMG/YzBlackBlue (1).jpg" />
 
           <div class="des">
             <span>Yeezy Boost 350</span>
@@ -79,8 +89,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/YzOreo.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/YzBlackWhite (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yzoreo') }}';"
+        >
+          <img src="../static/img/yeezyIMG/YzBlackWhite (1).jpg" />
 
           <div class="des">
             <span>Yeezy Boost 350</span>
@@ -99,8 +112,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/YzYecheil.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/YzYecheilReflective (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yzyecheil') }}';"
+        >
+          <img src="../static/img/yeezyIMG/YzYecheilReflective (1).jpg" />
 
           <div class="des">
             <span>Yeezy Boost 350</span>
@@ -119,8 +135,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/YzBred.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/YzBred (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yzbred') }}';"
+        >
+          <img src="../static/img/yeezyIMG/YzBred (1).jpg" />
 
           <div class="des">
             <span>Yeezy Boost 350</span>
@@ -139,8 +158,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/YzSlate.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/YzSlate(1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yzslate') }}';"
+        >
+          <img src="../static/img/yeezyIMG/YzSlate(1).jpg" />
 
           <div class="des">
             <span>Yeezy Boost 350</span>
@@ -159,8 +181,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/YzOat.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/YzBeluga (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yzoat') }}';"
+        >
+          <img src="../static/img/yeezyIMG/YzBeluga (1).jpg" />
 
           <div class="des">
             <span>Yeezy Boost 350</span>
@@ -179,8 +204,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/YzBeluga.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/YzMXaot (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yzbeluga') }}';"
+        >
+          <img src="../static/img/yeezyIMG/YzMXaot (1).jpg" />
 
           <div class="des">
             <span>Yeezy Boost 350</span>
@@ -199,8 +227,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/YzZebra.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/YzZebra (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yzzebra') }}';"
+        >
+          <img src="../static/img/yeezyIMG/YzZebra (1).jpg" />
 
           <div class="des">
             <span>Yeezy Boost 350</span>
@@ -219,8 +250,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/YzBone.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/YzBone (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yzbone') }}';"
+        >
+          <img src="../static/img/yeezyIMG/YzBone (1).jpg" />
 
           <div class="des">
             <span>Yeezy Boost 350</span>
@@ -239,8 +273,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/Yz700Static.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/Yz700Static (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yz700static') }}';"
+        >
+          <img src="../static/img/yeezyIMG/Yz700Static (1).jpg" />
 
           <div class="des">
             <span>Yeezy 700</span>
@@ -259,8 +296,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/Yz700WaveRun.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/Yz700WaveRunner (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yz700waverun') }}';"
+        >
+          <img src="../static/img/yeezyIMG/Yz700WaveRunner (1).jpg" />
 
           <div class="des">
             <span>Yeezy 700</span>
@@ -279,8 +319,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/Yz700Vanta.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/Yz700Vanta(1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yz700vanta') }}';"
+        >
+          <img src="../static/img/yeezyIMG/Yz700Vanta(1).jpg" />
 
           <div class="des">
             <span>Yeezy 700</span>
@@ -299,8 +342,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/Yz700Inertia.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/Yz700Inertia (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yz700inertia') }}';"
+        >
+          <img src="../static/img/yeezyIMG/Yz700Inertia (1).jpg" />
 
           <div class="des">
             <span>Yeezy 700</span>
@@ -319,8 +365,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/Yz700V3azael.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/Yz700V3Azael (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yz700v3azael') }}';"
+        >
+          <img src="../static/img/yeezyIMG/Yz700V3Azael (1).jpg" />
 
           <div class="des">
             <span>Yeezy 700 v3</span>
@@ -339,8 +388,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/Yz700V3Kyanite.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/Yz700V3Kyanite (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yz700v3kyanite') }}';"
+        >
+          <img src="../static/img/yeezyIMG/Yz700V3Kyanite (1).jpg" />
 
           <div class="des">
             <span>Yeezy 700 v3</span>
@@ -359,12 +411,15 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/yeezyProduct/yeezyHTML/Yz700V3Eremiel.html';">
-          <img src="/HtmlGeral/htmlProduct/yeezyProduct/yeezyIMG/Yz700V3Eremiel (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('yz700v3eremiel') }}';"
+        >
+          <img src="../static/img/yeezyIMG/Yz700V3Eremiel (1).jpg" />
 
           <div class="des">
             <span>Yeezy 700 v3</span>
-            <h5> Yeezy Boost 700 V3 Eremiel</h5>
+            <h5>Yeezy Boost 700 V3 Eremiel</h5>
             <div class="star">
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
@@ -378,8 +433,6 @@
             ><i class="fas fa-shopping-cart" style="color: #000000"></i
           ></a>
         </div>
-
-        
       </div>
     </section>
 
@@ -389,16 +442,40 @@
     </section>
 
     <section id="sm-banner" class="section-p1">
-      <div id="airJordan"  class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopJordan.html';" style="cursor: pointer;">
-      </div>
+      <div
+        id="airJordan"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopjordan') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="adidas" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopAdidas.html';" style="cursor: pointer;"></div>
+      <div
+        id="adidas"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopadidas') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="nike" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopNike.html';" style="cursor: pointer;"></div>
+      <div
+        id="nike"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopnike') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="yeezy" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopYeezy.html';" style="cursor: pointer;"></div>
+      <div
+        id="yeezy"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopyeezy') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="vans" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/ShopOutros.html';" style="cursor: pointer;"></div>
+      <div
+        id="vans"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopoutros') }}';"
+        style="cursor: pointer"
+      ></div>
     </section>
 
     <footer>
@@ -411,9 +488,14 @@
     </footer>
 
     <div class="buttonzap">
-      <a href='https://api.whatsapp.com/send?phone=5543988007768&'class="iconWhats" target='_blank'><i class="fab fa-whatsapp"></i></a>
+      <a
+        href="https://api.whatsapp.com/send?phone=5543988007768&"
+        class="iconWhats"
+        target="_blank"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
     </div>
 
-    <script src="/js/scriptHAMBURGUER.js"></script>
+    <script src="../static/js/scriptHAMBURGUER.js"></script>
   </body>
 </html>

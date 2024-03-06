@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CssGeral/css/styleSHOP.css" />
-    <link rel="stylesheet" href="/CssGeral/css/responsive.css" />
+    <link rel="stylesheet" href="../static/css/styleSHOP.css" />
+    <link rel="stylesheet" href="../static/css/responsive.css" />
 
-    <link rel="stylesheet" href="/CssGeral/cssBrend/nikeHeader.css" />
+    <link rel="stylesheet" href="../static/css/nikeHeader.css" />
 
-    <link rel="icon" href="/ImgGeral/img/abaLOGO.png" />
+    <link rel="icon" href="../static/img/ImgGeral/img/abaLOGO.png" />
 
     <title>Kick's Club Store</title>
 
@@ -21,20 +21,24 @@
     />
   </head>
   <body>
-
-
     <section id="header">
-      <a href="#"><img class="logo" src="/ImgGeral/img/logoMainimports-04.png" /></a>
+      <a href="#"
+        ><img
+          class="logo"
+          src="../static/img/ImgGeral/img/logoMainimports-04.png"
+      /></a>
 
       <div class="menu">
         <ul id="navbar">
-          <li><a href="/index.html">Principal</a></li>
+          <li><a href="{{ url_for('index') }}">Principal</a></li>
           <li><a class="active" href="#sm-banner">Marcas</a></li>
-          <li><a href="/About/about.html">Informações</a></li>
-          <li><a href="/userAccount/Resgister/register.html">Registrar-se</a></li>
-          <li><a href="/userAccount/login/login.html">Login</a></li>
+          <li><a href="{{ url_for('about') }}">Informações</a></li>
           <li>
-            <a href="/cart/cart.html"
+            <a href="{{ url_for('register') }}">Registrar-se</a>
+          </li>
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li>
+            <a href="{{ url_for('cart') }}"
               ><i
                 id="lg-bag"
                 class="fas fa-shopping-bag"
@@ -47,23 +51,24 @@
       </div>
 
       <div id="mobile">
-        <a href="/cart/cart.html"
+        <a href="{{ url_for('cart') }}"
           ><i class="fas fa-shopping-bag" style="color: #000000"></i
         ></a>
         <i id="bar" class="fas fa-outdent"></i>
       </div>
     </section>
 
-
-    <section id="page-header" class="pageAdidas">
-    </section>
+    <section id="page-header" class="pageAdidas"></section>
 
     <h1 class="title-brand">Coleção NIKE</h1>
 
     <section id="product1" class="section-p1">
       <div class="pro-container">
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkPanda.html';">
-          <img src="/ImgGeral/imgpastaTenis/dunkLowPANDA1.jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkpanda') }}';"
+        >
+          <img src="../static/img/ImgGeral/imgpastaTenis/dunkLowPANDA1.jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -82,8 +87,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkGrey.html';">
-          <img src="/ImgGeral/imgpastaTenis/dunkretroGREY1.jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkgrey') }}';"
+        >
+          <img src="../static/img/ImgGeral/imgpastaTenis/dunkretroGREY1.jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -102,8 +110,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkShySoSad.html';">
-          <img src="/ImgGeral/imgpastaTenis/Whysosad1.jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkwhysosad') }}';"
+        >
+          <img src="../static/img/ImgGeral/imgpastaTenis/Whysosad1.jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -122,8 +133,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkTravis.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkTraviss (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunktravis') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkTraviss (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -142,8 +156,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkLosAngeles.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkProPRM (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunklosangeles') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkProPRM (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -162,8 +179,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkPandaPigeon.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkPandaPRO (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkpandapigeon') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkPandaPRO (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -182,8 +202,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkStrangeLove.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkStrangeLove (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkstrangelove') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkStrangeLove (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -202,8 +225,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkHuf.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkDriftwood (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkhuf') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkDriftwood (1).jpg" />
 
           <div class="des">
             <span>Air Jorda 1 High</span>
@@ -222,8 +248,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkReversePanda.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkReversePanda (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkreversepanda') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkReversePanda (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -242,8 +271,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkUniversityBlue.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkUniversityBlue (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkuniversityblue') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkUniversityBlue (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -262,8 +294,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkApril.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkApril (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkapril') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkApril (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -282,8 +317,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkBorn.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkBornRaised (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkborn') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkBornRaised (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -302,8 +340,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkGreenApple.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkGreenApple(1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkgreenapple') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkGreenApple(1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -322,8 +363,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkMetalicGold.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkMetalicGold (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkmetalicgold') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkMetalicGold (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -342,8 +386,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkPowerPuff.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkGirlsBlue (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkpowerpuff') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkGirlsBlue (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -362,8 +409,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkValentine.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/dunkValentine (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkvalentine') }}';"
+        >
+          <img src="../static/img/nikeImg/dunkValentine (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -382,8 +432,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkCourtPurple.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/dunkPurpleSuede (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkcourtpurple') }}';"
+        >
+          <img src="../static/img/nikeImg/dunkPurpleSuede (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -402,8 +455,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/airmaxWotherSpoon.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/Airmax90Wotherspoon (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('airmaxwotherspoon') }}';"
+        >
+          <img src="../static/img/nikeImg/Airmax90Wotherspoon (1).jpg" />
 
           <div class="des">
             <span>Air Max</span>
@@ -422,8 +478,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/airmax9white.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/Airmax97White (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('airmax9white') }}';"
+        >
+          <img src="../static/img/nikeImg/Airmax97White (1).jpg" />
 
           <div class="des">
             <span>Air Max</span>
@@ -442,8 +501,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/airforceWhite.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/AirForceWhite (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('airforcewhite') }}';"
+        >
+          <img src="../static/img/nikeImg/AirForceWhite (1).jpg" />
 
           <div class="des">
             <span>Air Force</span>
@@ -461,8 +523,6 @@
             ><i class="fas fa-shopping-cart" style="color: #000000"></i
           ></a>
         </div>
-
-
       </div>
     </section>
 
@@ -472,16 +532,40 @@
     </section>
 
     <section id="sm-banner" class="section-p1">
-      <div id="airJordan"  class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopJordan.html';" style="cursor: pointer;">
-      </div>
+      <div
+        id="airJordan"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopjordan') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="adidas" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopAdidas.html';" style="cursor: pointer;"></div>
+      <div
+        id="adidas"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopadidas') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="nike" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopNike.html';" style="cursor: pointer;"></div>
+      <div
+        id="nike"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopnike') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="yeezy" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopYeezy.html';" style="cursor: pointer;"></div>
+      <div
+        id="yeezy"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopyeezy') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="vans" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/ShopOutros.html';" style="cursor: pointer;"></div>
+      <div
+        id="vans"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopoutros') }}';"
+        style="cursor: pointer"
+      ></div>
     </section>
 
     <footer>
@@ -494,9 +578,14 @@
     </footer>
 
     <div class="buttonzap">
-      <a href='https://api.whatsapp.com/send?phone=5543988007768&'class="iconWhats" target='_blank'><i class="fab fa-whatsapp"></i></a>
+      <a
+        href="https://api.whatsapp.com/send?phone=5543988007768&"
+        class="iconWhats"
+        target="_blank"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
     </div>
 
-    <script src="/js/scriptHAMBURGUER.js"></script>
+    <script src="../static/js/scriptHAMBURGUER.js"></script>
   </body>
 </html>
