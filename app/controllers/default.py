@@ -361,6 +361,29 @@ def j1spiderverse():
 def nwgreen():
     return render_template("NWgren.html")
 
+@app.route("/nwblack")
+def nwblack():
+    return render_template("NWblack.html")
+
+@app.route("/nwoffwhite")
+def nwoffwhite():
+    return render_template("NWOffwhite.html")
+
+# bape
+@app.route("/bapewhite")
+def bapewhite():
+    return render_template("BAPEwhite.html")
+
+@app.route("/bapeblue")
+def bapeblue():
+    return render_template("BAPEblue.html")
+
+@app.route("/bapeblack")
+def bapeblack():
+    return render_template("BAPEblack.html")
+
+
+
 # vans
 @app.route("/vansknu")
 def vansknu():
@@ -431,6 +454,26 @@ def adsuperstarpink():
 @app.route("/adsuperstarblack")
 def adsuperstarblack():
     return render_template("adSuperStarBlack.html")
+
+# lv
+
+@app.route("/lvblue")
+def lvblue():
+    return render_template("LVBlue.html")
+
+@app.route("/lvblack")
+def lvblack():
+    return render_template("LVBLack.html")
+
+@app.route("/lvgreen")
+def lvgreen():
+    return render_template("LVGreen.html")
+
+@app.route("/mcqueenwhite")
+def mcqueenwhite():
+    return render_template("mcqueenWhite.html")
+
+
 
 
 # cart

@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CssGeral/css/styleSHOP.css" />
-    <link rel="stylesheet" href="/CssGeral/css/responsive.css" />
+    <link rel="stylesheet" href="../static/css/styleSHOP.css" />
+    <link rel="stylesheet" href="../static/css/responsive.css" />
 
-    <link rel="stylesheet" href="/CssGeral/cssBrend/vansHeader.css" />
+    <link rel="stylesheet" href="../static/css/vansHeader.css" />
 
-    <link rel="icon" href="/ImgGeral/img/abaLOGO.png" />
+    <link rel="icon" href="../static/img/ImgGeral/img/abaLOGO.png" />
 
     <title>Kick's Club Store</title>
 
@@ -22,17 +22,23 @@
   </head>
   <body>
     <section id="header">
-      <a href="#"><img class="logo" src="/ImgGeral/img/logoMainimports-04.png" /></a>
+      <a href="#"
+        ><img
+          class="logo"
+          src="../static/img/ImgGeral/img/logoMainimports-04.png"
+      /></a>
 
       <div class="menu">
         <ul id="navbar">
-          <li><a href="/index.html">Principal</a></li>
+          <li><a href="{{ url_for('index') }}">Principal</a></li>
           <li><a class="active" href="#sm-banner">Marcas</a></li>
-          <li><a href="/About/about.html">Informações</a></li>
-          <li><a href="/userAccount/Resgister/register.html">Registrar-se</a></li>
-          <li><a href="/userAccount/login/login.html">Login</a></li>
+          <li><a href="{{ url_for('about') }}">Informações</a></li>
           <li>
-            <a href="/cart/cart.html"
+            <a href="{{ url_for('register') }}">Registrar-se</a>
+          </li>
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li>
+            <a href="{{ url_for('cart') }}"
               ><i
                 id="lg-bag"
                 class="fas fa-shopping-bag"
@@ -45,23 +51,24 @@
       </div>
 
       <div id="mobile">
-        <a href="/cart/cart.html"
+        <a href="{{ url_for('cart') }}"
           ><i class="fas fa-shopping-bag" style="color: #000000"></i
         ></a>
         <i id="bar" class="fas fa-outdent"></i>
       </div>
     </section>
 
-    <section id="page-header">
-    </section>
+    <section id="page-header"></section>
 
     <h1 class="title-brand">Outras Marcas</h1>
 
     <section id="product1" class="section-p1">
       <div class="pro-container">
-
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/LVBlue.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG/LVtrainerBlue (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('lvblue') }}';"
+        >
+          <img src="../static/img/OutrosIMG/LVtrainerBlue (1).jpg" />
 
           <div class="des">
             <span>LOUIS VUITTON</span>
@@ -80,8 +87,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/LVBlack.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG/LVtrainerBlack (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('lvblack') }}';"
+        >
+          <img src="../static/img/OutrosIMG/LVtrainerBlack (1).jpg" />
 
           <div class="des">
             <span>LOUIS VUITTON</span>
@@ -100,8 +110,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/LVGreen.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG/LVtrainerGreen (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('lvgreen') }}';"
+        >
+          <img src="../static/img/OutrosIMG/LVtrainerGreen (1).jpg" />
 
           <div class="des">
             <span>LOUIS VUITTON</span>
@@ -120,8 +133,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/NWgren.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG/NW550green (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('nwgreen') }}';"
+        >
+          <img src="../static/img/OutrosIMG/NW550green (1).jpg" />
 
           <div class="des">
             <span>NEW BALANCE</span>
@@ -140,8 +156,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/NWblack.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG/NW550blackandWhite (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('nwblack') }}';"
+        >
+          <img src="../static/img/OutrosIMG/NW550blackandWhite (1).jpg" />
 
           <div class="des">
             <span>NEW BALANCE</span>
@@ -160,8 +179,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/NWOffwhite.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG//NW550offWhite (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('nwoffwhite') }}';"
+        >
+          <img src="../static/img/OutrosIMG//NW550offWhite (1).jpg" />
 
           <div class="des">
             <span>NEW BALANCE</span>
@@ -180,8 +202,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/BAPEwhite.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG/BapeWhite (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('bapewhite') }}';"
+        >
+          <img src="../static/img/OutrosIMG/BapeWhite (1).jpg" />
 
           <div class="des">
             <span>BAPE</span>
@@ -200,8 +225,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/BAPEblue.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG/BapeBlue (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('bapeblue') }}';"
+        >
+          <img src="../static/img/OutrosIMG/BapeBlue (1).jpg" />
 
           <div class="des">
             <span>BAPE</span>
@@ -220,9 +248,11 @@
           ></a>
         </div>
 
-
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/BAPEblack.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG/BapeBlack (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('bapeblack') }}';"
+        >
+          <img src="../static/img/OutrosIMG/BapeBlack (1).jpg" />
 
           <div class="des">
             <span>BAPE</span>
@@ -241,8 +271,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/vansknu.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG/VansKNU (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('vansknu') }}';"
+        >
+          <img src="../static/img/OutrosIMG/VansKNU (1).jpg" />
 
           <div class="des">
             <span>VANS</span>
@@ -261,8 +294,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/outrosProduct/OutrosHTML/mcqueenWhite.html';">
-          <img src="/HtmlGeral/htmlProduct/outrosProduct/OutrosIMG/AlexanderWhite (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('mcqueenwhite') }}';"
+        >
+          <img src="../static/img/OutrosIMG/AlexanderWhite (1).jpg" />
 
           <div class="des">
             <span>ALEXANDER MCQUEEN</span>
@@ -289,16 +325,40 @@
     </section>
 
     <section id="sm-banner" class="section-p1">
-      <div id="airJordan"  class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopJordan.html';" style="cursor: pointer;">
-      </div>
+      <div
+        id="airJordan"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopjordan') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="adidas" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopAdidas.html';" style="cursor: pointer;"></div>
+      <div
+        id="adidas"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopadidas') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="nike" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopNike.html';" style="cursor: pointer;"></div>
+      <div
+        id="nike"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopnike') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="yeezy" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopYeezy.html';" style="cursor: pointer;"></div>
+      <div
+        id="yeezy"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopyeezy') }}';"
+        style="cursor: pointer"
+      ></div>
 
-      <div id="vans" class="banner-box" onclick="window.location.href='/HtmlGeral/htmlBrend/shopVans.html';" style="cursor: pointer;"></div>
+      <div
+        id="vans"
+        class="banner-box"
+        onclick="window.location.href='{{ url_for('shopoutros') }}';"
+        style="cursor: pointer"
+      ></div>
     </section>
 
     <footer>
@@ -311,9 +371,14 @@
     </footer>
 
     <div class="buttonzap">
-      <a href='https://api.whatsapp.com/send?phone=5543988007768&'class="iconWhats" target='_blank'><i class="fab fa-whatsapp"></i></a>
+      <a
+        href="https://api.whatsapp.com/send?phone=5543988007768&"
+        class="iconWhats"
+        target="_blank"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
     </div>
 
-    <script src="/js/scriptHAMBURGUER.js"></script>
+    <script src="../static/js/scriptHAMBURGUER.js"></script>
   </body>
 </html>

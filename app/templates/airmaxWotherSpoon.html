@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/CssGeral/css/style.css" />
-    <link rel="stylesheet" href="/CssGeral/css/styleSHOP.css" />
-    <link rel="stylesheet" href="/CssGeral/css/responsive.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/styleSHOP.css" />
+    <link rel="stylesheet" href="../static/css/responsive.css" />
 
-    <link rel="icon" href="/ImgGeral/img/abaLOGO.png" />
+    <link rel="icon" href="../static/img/ImgGeral/img/abaLOGO.png" />
 
     <title>Kick's Club Store</title>
 
@@ -22,21 +22,23 @@
   </head>
   <body>
     <section id="header">
-      <a href="/index.html"
-        ><img class="logo" src="/ImgGeral/img/logoMainimports-04.png"
+      <a href="{{ url_for('index') }}"
+        ><img
+          class="logo"
+          src="../static/img/ImgGeral/img/logoMainimports-04.png"
       /></a>
 
       <div class="menu">
         <ul id="navbar">
-          <li><a href="/index.html">Principal</a></li>
-          <li><a href="/HtmlGeral/htmlBrend/shopJordan.html">Marcas</a></li>
-          <li><a href="/About/about.html">Informações</a></li>
+          <li><a href="{{ url_for('index') }}">Principal</a></li>
+          <li><a href="{{ url_for('shopjordan') }}">Marcas</a></li>
+          <li><a href="{{ url_for('about') }}">Informações</a></li>
           <li>
-            <a href="/userAccount/Resgister/register.html">Registrar-se</a>
+            <a href="{{ url_for('register') }}">Registrar-se</a>
           </li>
-          <li><a href="/userAccount/login/login.html">Login</a></li>
+          <li><a href="{{ url_for('login') }}">Login</a></li>
           <li>
-            <a href="/cart/cart.html"
+            <a href="{{ url_for('cart') }}"
               ><i
                 id="lg-bag"
                 class="fas fa-shopping-bag"
@@ -49,7 +51,7 @@
       </div>
 
       <div id="mobile">
-        <a href="/cart/cart.html"
+        <a href="{{ url_for('cart') }}"
           ><i class="fas fa-shopping-bag" style="color: #000000"></i
         ></a>
         <i id="bar" class="fas fa-outdent"></i>
@@ -59,7 +61,7 @@
     <section id="prodetails" class="section-p1">
       <div class="single-pro-image">
         <img
-          src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/Airmax90Wotherspoon (1).jpg"
+          src="../static/img/nikeImg/Airmax90Wotherspoon (1).jpg"
           width="100%"
           id="MainImg"
         />
@@ -67,7 +69,7 @@
         <div class="small-img-group">
           <div class="small-img-col">
             <img
-              src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/Airmax90Wotherspoon (2).jpg"
+              src="../static/img/nikeImg/Airmax90Wotherspoon (2).jpg"
               width="100%"
               class="small-img"
             />
@@ -75,7 +77,7 @@
 
           <div class="small-img-col">
             <img
-              src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/Airmax90Wotherspoon (3).jpg"
+              src="../static/img/nikeImg/Airmax90Wotherspoon (3).jpg"
               width="100%"
               class="small-img"
             />
@@ -83,7 +85,7 @@
 
           <div class="small-img-col">
             <img
-              src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/Airmax90Wotherspoon (4).jpg"
+              src="../static/img/nikeImg/Airmax90Wotherspoon (4).jpg"
               width="100%"
               class="small-img"
             />
@@ -91,7 +93,7 @@
 
           <div class="small-img-col">
             <img
-              src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/Airmax90Wotherspoon (1).jpg"
+              src="../static/img/nikeImg/Airmax90Wotherspoon (1).jpg"
               width="100%"
               class="small-img"
             />
@@ -119,8 +121,13 @@
         <button class="normal">Adicione ao Carrinho</button>
         <h4>Detalhes Do Produto</h4>
         <span>
-            Desenhado por Sean Wotherspoon , fundador da segunda loja em Los Angeles e vencedor do Grande Prêmio Nike Air Max em 2017, este tênis é sem dúvida um dos modelos mais esperados do ano de 2018.
-            Composto pelo cabedal do Air Max 97 em veludo multicolorido e uma sola Air Max 1, a Nike Air Max1/97 Sean Wotherspoon é um modelo único e original. O look retro deste tênis vem diretamente das inspirações de Sean e de seu amor por tênis vintage e anos 90.</span
+          Desenhado por Sean Wotherspoon , fundador da segunda loja em Los
+          Angeles e vencedor do Grande Prêmio Nike Air Max em 2017, este tênis é
+          sem dúvida um dos modelos mais esperados do ano de 2018. Composto pelo
+          cabedal do Air Max 97 em veludo multicolorido e uma sola Air Max 1, a
+          Nike Air Max1/97 Sean Wotherspoon é um modelo único e original. O look
+          retro deste tênis vem diretamente das inspirações de Sean e de seu
+          amor por tênis vintage e anos 90.</span
         >
       </div>
     </section>
@@ -130,49 +137,57 @@
       <p>Sneaker's Do Momento...</p>
 
       <div class="pro-container">
-        
-                <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkPowerPuff.html';">
-                  <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkGirlsBlue (1).jpg" />
-        
-                  <div class="des">
-                    <span>Dunk</span>
-                    <h5>The Powerpuff Girls x Nike SB Dunk Low Bubbles</h5>
-                    <div class="star">
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                    <h4>549,90 - 10% OFF via pix</h4>
-                  </div>
-                  <a href="#"
-                    ><i class="fas fa-shopping-cart" style="color: #000000"></i
-                  ></a>
-                </div>
-                
-                <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/airmax9white.html';">
-                  <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/Airmax97White (1).jpg" />
-        
-                  <div class="des">
-                    <span>Air Max</span>
-                    <h5>Air Max 97 White</h5>
-                    <div class="star">
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <i class="far fa-star"></i>
-                    </div>
-                    <h4>R$499,90 - 10% OFF via pix</h4>
-                  </div>
-                  <a href="#"
-                    ><i class="fas fa-shopping-cart" style="color: #000000"></i
-                  ></a>
-                </div>
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkpowerpuff') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkGirlsBlue (1).jpg" />
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkLosAngeles.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkProPRM (1).jpg" />
+          <div class="des">
+            <span>Dunk</span>
+            <h5>The Powerpuff Girls x Nike SB Dunk Low Bubbles</h5>
+            <div class="star">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h4>549,90 - 10% OFF via pix</h4>
+          </div>
+          <a href="#"
+            ><i class="fas fa-shopping-cart" style="color: #000000"></i
+          ></a>
+        </div>
+
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('airmax9white') }}';"
+        >
+          <img src="../static/img/nikeImg/Airmax97White (1).jpg" />
+
+          <div class="des">
+            <span>Air Max</span>
+            <h5>Air Max 97 White</h5>
+            <div class="star">
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <h4>R$499,90 - 10% OFF via pix</h4>
+          </div>
+          <a href="#"
+            ><i class="fas fa-shopping-cart" style="color: #000000"></i
+          ></a>
+        </div>
+
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunklosangeles') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkProPRM (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -191,8 +206,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/nikeProduct/nikeHTML/dunkBorn.html';">
-          <img src="/HtmlGeral/htmlProduct/nikeProduct/nikeImg/DunkBornRaised (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('dunkborn') }}';"
+        >
+          <img src="../static/img/nikeImg/DunkBornRaised (1).jpg" />
 
           <div class="des">
             <span>Dunk</span>
@@ -210,7 +228,6 @@
             ><i class="fas fa-shopping-cart" style="color: #000000"></i
           ></a>
         </div>
-
       </div>
     </section>
 
@@ -223,7 +240,7 @@
       </div>
     </footer>
 
-    <script src="/js/scriptHAMBURGUER.js"></script>
+    <script src="../static/js/scriptHAMBURGUER.js"></script>
 
     <script>
       var MainImg = document.getElementById("MainImg");

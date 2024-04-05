@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/CssGeral/css/style.css" />
-    <link rel="stylesheet" href="/CssGeral/css/styleSHOP.css" />
-    <link rel="stylesheet" href="/CssGeral/css/responsive.css">
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/styleSHOP.css" />
+    <link rel="stylesheet" href="../static/css/responsive.css" />
 
-
-    <link rel="icon" href="/ImgGeral/img/abaLOGO.png" />
+    <link rel="icon" href="../static/img/ImgGeral/img/abaLOGO.png" />
 
     <title>Kick's Club Store</title>
 
@@ -23,17 +22,23 @@
   </head>
   <body>
     <section id="header">
-      <a href="/index.html"><img class="logo" src="/ImgGeral/img/logoMainimports-04.png" /></a>
+      <a href="{{ url_for('index') }}"
+        ><img
+          class="logo"
+          src="../static/img/ImgGeral/img/logoMainimports-04.png"
+      /></a>
 
       <div class="menu">
         <ul id="navbar">
-          <li><a href="/index.html">Principal</a></li>
-          <li><a href="/HtMlGeral/htmlBrend/shopJordan.html">Marcas</a></li>
-          <li><a href="/About/about.html">Informações</a></li>
-          <li><a href="/userAccount/Resgister/register.html">Registrar-se</a></li>
-          <li><a href="/userAccount/login/login.html">Login</a></li>
+          <li><a href="{{ url_for('index') }}">Principal</a></li>
+          <li><a href="{{ url_for('shopjordan') }}">Marcas</a></li>
+          <li><a href="{{ url_for('about') }}">Informações</a></li>
           <li>
-            <a href="/cart/cart.html"
+            <a href="{{ url_for('register') }}">Registrar-se</a>
+          </li>
+          <li><a href="{{ url_for('login') }}">Login</a></li>
+          <li>
+            <a href="{{ url_for('cart') }}"
               ><i
                 id="lg-bag"
                 class="fas fa-shopping-bag"
@@ -46,39 +51,55 @@
       </div>
 
       <div id="mobile">
-        <a href="/cart/cart.html"
+        <a href="{{ url_for('cart') }}"
           ><i class="fas fa-shopping-bag" style="color: #000000"></i
         ></a>
         <i id="bar" class="fas fa-outdent"></i>
       </div>
-
-
-     
     </section>
 
     <section id="prodetails" class="section-p1">
       <div class="single-pro-image">
-        <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adCampusBlue.png" width="100%" id="MainImg">
+        <img
+          src="../static/img/adidasIMG/adCampusBlue.png"
+          width="100%"
+          id="MainImg"
+        />
 
         <div class="small-img-group">
           <div class="small-img-col">
-            <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adCampusBlue (1).png" width="100%" class="small-img">
+            <img
+              src="../static/img/adidasIMG/adCampusBlue (1).png"
+              width="100%"
+              class="small-img"
+            />
           </div>
 
           <div class="small-img-col">
-            <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adCampusBlue (2).png" width="100%" class="small-img">
+            <img
+              src="../static/img/adidasIMG/adCampusBlue (2).png"
+              width="100%"
+              class="small-img"
+            />
           </div>
 
           <div class="small-img-col">
-            <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adCampusBlue (3).png" width="100%" class="small-img">
+            <img
+              src="../static/img/adidasIMG/adCampusBlue (3).png"
+              width="100%"
+              class="small-img"
+            />
           </div>
 
           <div class="small-img-col">
-            <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adCampusBlue.png" width="100%" class="small-img">
+            <img
+              src="../static/img/adidasIMG/adCampusBlue.png"
+              width="100%"
+              class="small-img"
+            />
           </div>
         </div>
       </div>
-
 
       <div class="single-pro-details">
         <h6>Adidas / Campus 00s</h6>
@@ -96,21 +117,30 @@
           <option>43</option>
           <option>44</option>
         </select>
-        <input type="number" value="1">
+        <input type="number" value="1" />
         <button class="normal">Adicione ao Carrinho</button>
         <h4>Detalhes Do Produto</h4>
-        <span>Estes sapatos adidas pegam nos elementos icónicos do Campus 80 e dão-lhes um toque de última geração inspirado no skate. Conhecida pela sua durabilidade e pela forma como se molda ao seu pé ao longo do tempo, a camurça ajuda a proporcionar longevidade e uma base sólida. Novos colorblocks, gráficos e marcas colegiais criam uma nova identidade para a próxima geração possuir e estilizar..</span>
+        <span
+          >Estes sapatos adidas pegam nos elementos icónicos do Campus 80 e
+          dão-lhes um toque de última geração inspirado no skate. Conhecida pela
+          sua durabilidade e pela forma como se molda ao seu pé ao longo do
+          tempo, a camurça ajuda a proporcionar longevidade e uma base sólida.
+          Novos colorblocks, gráficos e marcas colegiais criam uma nova
+          identidade para a próxima geração possuir e estilizar..</span
+        >
       </div>
     </section>
-
 
     <section id="product1" class="section-p1">
       <h2>MODELOS SIMILARES!</h2>
       <p>Sneaker's Do Momento...</p>
 
       <div class="pro-container">
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/AdcampusWhiteBlack.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiCampuBlack (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adcampuswhiteblack') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiCampuBlack (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -129,8 +159,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adCampusGrey.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiCampusbalckGrey (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adcampusgrey') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiCampusbalckGrey (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -149,8 +182,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adCampusGreen.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiCampusGreenFD.png" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adcampusgreen') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiCampusGreenFD.png" />
 
           <div class="des">
             <span>Adidas</span>
@@ -169,8 +205,11 @@
           ></a>
         </div>
 
-        <div class="pro" onclick="window.location.href='/HtmlGeral/htmlProduct/adidasProduct/adidasHTML/adCampusgreyLITE.html';">
-          <img src="/HtmlGeral/htmlProduct/adidasProduct/adidasIMG/adiCampusgrey (1).jpg" />
+        <div
+          class="pro"
+          onclick="window.location.href='{{ url_for('adcampusgreylite') }}';"
+        >
+          <img src="../static/img/adidasIMG/adiCampusgrey (1).jpg" />
 
           <div class="des">
             <span>Adidas</span>
@@ -188,36 +227,36 @@
             ><i class="fas fa-shopping-cart" style="color: #000000"></i
           ></a>
         </div>
-
       </div>
     </section>
 
-
-
     <footer>
       <div class="footer-bottom">
-          <p>&copy; 2024 Kick's Store. <br> Code by Thiago Pedrero And Alberto Gouvea  </p>
+        <p>
+          &copy; 2024 Kick's Store. <br />
+          Code by Thiago Pedrero And Alberto Gouvea
+        </p>
       </div>
-  </footer>
+    </footer>
 
-    <script src="/js/scriptHAMBURGUER.js"></script>
+    <script src="../static/js/scriptHAMBURGUER.js"></script>
 
     <script>
       var MainImg = document.getElementById("MainImg");
-      var smallimg = document.getElementsByClassName("small-img")
+      var smallimg = document.getElementsByClassName("small-img");
 
-      smallimg[0].onclick = function(){
+      smallimg[0].onclick = function () {
         MainImg.src = smallimg[0].src;
-      }
-      smallimg[1].onclick = function(){
+      };
+      smallimg[1].onclick = function () {
         MainImg.src = smallimg[1].src;
-      }
-      smallimg[2].onclick = function(){
+      };
+      smallimg[2].onclick = function () {
         MainImg.src = smallimg[2].src;
-      }
-      smallimg[3].onclick = function(){
+      };
+      smallimg[3].onclick = function () {
         MainImg.src = smallimg[3].src;
-      }
+      };
     </script>
   </body>
 </html>
